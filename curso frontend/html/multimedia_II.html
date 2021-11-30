@@ -8,11 +8,36 @@
 </head>
 <body>
     <h2>Reproductor de video</h2>
-    <video controls>
+    <video controls width="500" height="500">
         <source src="recursos/video" type="video/mp4">
         <source src="recursos/video" type="video/ogg">
         <source src="recursos/video" type="video/webm">
         <p>El video no se ha podido reproducir debido a que este formato de archivo no es compatible con su navegador</p>
     </video>
+
+    <h2>Recurso incrustado</h2>
+    <iframe src="https://www.w3.org/" width="300" height="300" allowfullscreen></iframe>
+    <br>
+    <br>
+    <iframe src="https://www.youtube.com/watch?v=PnNYO_4Tn1o" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <br>
+    <br>
+    <!--insertar animacion flash-->
+    <object data="recursos/magicball.swf" width="300" height="350">
+        <param name="movie" value="recursos/magicball.swf">
+        <param name="quality" value="high">
+        <param name="wmode" value="transparent">
+        <param name="" value="recursos/magicball.swf">
+    </object>
+    <br>
+    <br>
+    <embed src="recursos/magicball.swf" type="aplication/vnd.flash-movie" width="300" height="350">
+
+
+
+
+
+
+
 </body>
 </html>

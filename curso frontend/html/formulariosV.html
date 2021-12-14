@@ -10,7 +10,21 @@
 <body>
     <h1>Como crear Formularios en HTML</h1>
     <form action="" method="get" enctype="multipart/form-data">
-       Buscar: <input type="search" name="buscador" placeholder="Buscar...">
+       Buscar: <input type="search" name="buscador" placeholder="Buscar..."> <br><br>
+
+       Pais <br>
+       <select name="pais[]" multiple>
+           <option value="argentina">Argentina</option>
+           <option value="chile">Chile</option>
+           <option value="colombia">Colombia</option>
+           <option value="estados_unidos">Estados Unidos</option>
+           <option value="mexico" selected>Mexico</option>
+           <option value="panama">Panama</option>
+           <option value="republica_dominicana">Republica Dominicana</option>
+       </select> <br><br>
+
+       Comentarios <br>
+       <textarea name="mensaje" cols="30" rows="10"></textarea>
     </form>
 </body>
 

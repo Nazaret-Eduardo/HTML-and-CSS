@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios IV</title>
+</head>
+
+<body>
+    <h1>Como crear Formularios en HTML</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        Pasatiempos <br>
+        <input type="checkbox" name="pasatiempo1" value="leer"> Lectura <br>
+        <input type="checkbox" name="pasatiempo2" value="deportes"> Hacer deportes <br>
+        <input type="checkbox" name="pasatiempo3" value="musica"> Escuchar musica <br>
+        <input type="checkbox" name="pasatiempo4" value="otros" checked> Otros <br><br>
+
+        Cantidad <input type="number" name="cantidad" value="1" min="1" max="5" step="3"> <br><br>
+        Cantidad de 3 <input type="number" name="cantidad" value="1" step="3"> <br><br>
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha_nacimiento" id="fecha" size="50"><br><br>
+
+        Define un rango <input type="range" name="rangos" size="50"><br><br>
+
+        Adjuntar archivo <input type="file" name="archivo[]" multiple>
+
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores avanzados en CSS</title>
+    <style>
+        /*Selector adyacente*/
+        div+p {
+            background-color: seagreen;
+        }
+
+        /*Selector hermano general*/
+        div~p {
+            font-size: 25px;
+        }
+
+        /*Selector de atributo
+        {atributo}
+        */
+        a[target] {
+            color: green
+        }
+
+        /*Selector de atributos [atr="valor"]*/
+        a[target="_self"] {
+            color: red;
+        }
+
+        /*Selector de atributos [atr^="valor"]*/
+        p[class^="destacado"]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estos es un encabezado de nivel 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium explicabo, iusto esse, cum voluptatem quam
+        tenetur architecto suscipit distinctio vitae vel labore vero modi necessitatibus reprehenderit minus
+        dignissimos! Eos, facere.</p>
+    <a href="#">Leer mas</a>
+
+    <h2>Esto es un encabezado de nivel 2</h2>
+    <p id="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui recusandae ex quaerat ducimus velit nihil
+        maiores
+        porro, explicabo cumque voluptatum quo nemo esse et tenetur quidem totam temporibus nisi delectus?</p>
+
+    <div>
+        <h2>Esto es otro encabezado de nivel 2</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, sapiente doloremque! Odit officia debitis qui
+            aut vel nobis culpa voluptate veritatis adipisci, amet facilis officiis, ab natus. Quibusdam, ad minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sit explicabo dicta qui exercitationem harum
+            suscipit dolores debitis culpa nesciunt laboriosam illum cum doloribus numquam sequi beatae reprehenderit,
+            quam reiciendis?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quaerat vero impedit corrupti ratione nulla
+        nobis, consectetur quis voluptate, necessitatibus quia. Exercitationem nulla in tenetur natus neque harum, enim
+        ipsam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, temporibus. Fuga cumque libero pariatur.
+        Ullam, consectetur. Perferendis quia id enim cupiditate exercitationem. A porro molestias exercitationem
+        cupiditate velit quod cum?</p>
+
+
+    <ol>
+        <li>Vegetales</li>
+        <li>Frutas
+            <ul>
+                <li>Manzanas</li>
+                <li>Uvas</li>
+                <li>Fresas</li>
+            </ul>
+        </li>
+        <li>Verduras</li>
+    </ol>
+    <a href="#">Enlace 1</a><br>
+    <a href="#" target="_blank">Enlace 2</a><br>
+    <a href="#" target="_self">Enlace 3</a><br>
+    <p class="destacado">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio explicabo suscipit
+        reprehenderit qui vero, voluptas id numquam, ipsum expedita, voluptatem ab obcaecati cupiditate dolorum facilis?
+        Maxime ipsam nam non nulla.</p>
+    <p class="especial destacado">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sit commodi laudantium
+        ducimus laborum, soluta sint consequuntur molestias, eius sapiente suscipit aut cumque tempora dignissimos totam
+        veniam repudiandae debitis eos?</p>
+    <p class="destacado principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fuga vero sapiente
+        soluta, iusto ipsam animi suscipit dolores neque, ab eaque temporibus voluptates quis aspernatur laborum itaque!
+        Delectus, doloremque quibusdam?</p>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de pseudo-clases</title>
+
+    <style>
+        /*pseudo-clases orientadas a enlaces*/
+        a:link {
+            color: green;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            font-size: 18px;
+        }
+        a:active{
+            color: black;
+        }
+        /*pseudo-clases orientadas a cualquier elemento*/
+        button:hover{
+            color: red;
+        }
+
+        button:active{
+            color: blue;
+        }
+        /*pseudo-clases ordenadas a formularios*/
+        input:enabled{
+            background: lightyellow;
+        }
+        input:focus{
+            background: yellow;
+        }
+        input:disabled{
+            background-color: darkgrey;
+            cursor: not-allowed;
+        }
+        input[type="email"]:invalid{
+            border: 3px solid red;
+
+        }
+        input[type="radio"]:checked + label{
+            background-color: blue;
+            color: white;
+        }
+        input[type=":checkbox"]:checked + label{
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo-clases CSS</h1>
+    <h2>Pseudo-clases orientadas a enlaces</h2>
+    <a href="#">Esto es un enlace</a><br><br>
+    <button>Pulsa aqui</button>
+
+    <h2>Pseudo-clases orientadas formularios</h2>
+    <form action="">
+        <label for="suNombre">Nombre:</label>
+        <input type="text" id="suNombre" size="50"><br><br>
+
+        <label for="suApellido">Apellido:</label>
+        <input type="text" id="suNombre" size="50" disabled><br><br>
+
+        <label for="suEmail">Email:</label>
+        <input type="email" id="suEmail" size="50"><br><br>
+        
+        Genero: <br>
+        <input type="radio" name="genero" id="hombre" value="masculino">
+        <label for="hombre">Masculino</label>
+
+        <input type="radio" name="genero" id="mujer" value="femenino">
+        <label for="mujer">Femenino</label>
+        <br><br>
+
+        Pasatiempo: <br>
+        <input type="checkbox" name="pasatiempo1" id="hiking" value="excursionismo">
+        <label for="hiking">Excursionismo</label>
+
+        <input type="checkbox" name="pasatiempo2" id="swimming" value="natación">
+        <label for="swimming">Natación</label>
+    </form>
+</body>
+</html>

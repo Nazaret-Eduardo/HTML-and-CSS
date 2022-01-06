@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de pseudo-elementos</title>
+
+    <style>
+        /*Pseudo-elemento ::first-letter*/
+        p#primeraLetra::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+
+        /*Pseudo-elmento ::first-line*/
+        p#primeraLinea::first-line{
+            color: blue;
+        }
+
+        /*Pseudo-elmento :::before y :::after*/
+        p.error::before{
+            content: url(images/danger.jpg);
+            vertical-align: middle;
+            padding-right: 3px;
+        }
+        p.error span::after{
+            content: "Atención:";
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Pseudo-elementos CSS</h1>
+    <p id="primeraLetra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque impedit possimus, assumenda libero a quasi?
+        Ea nihil adipisci vero velit, consequatur quia quis fuga fugit repellat eaque libero illum.</p>
+    <p id="primeraLinea">Vitae soluta iste, unde voluptatem debitis voluptatum, a pariatur suscipit quasi repudiandae quis! Iure natus
+        amet laboriosam minus quod ratione voluptatibus dignissimos? Perferendis, veritatis quibusdam. Perspiciatis
+        maxime molestiae necessitatibus minima?</p>
+    <p class="error"><span></span> Mollitia recusandae nulla quis voluptates adipisci necessitatibus iste minima eos sequi est eligendi laudantium
+        excepturi, delectus, dignissimos accusantium libero quo quod, ex quos. A harum, dolor officia cum magnam est.
+    </p>
+    <p>Ea nesciunt consequuntur obcaecati enim hic, inventore natus dolorum maiores odit cupiditate voluptatem labore
+        quis minus aspernatur, eveniet porro itaque necessitatibus maxime sequi quibusdam eos? Nihil reprehenderit
+        nesciunt itaque sequi.</p>
+    <p class="error"><span></span> Quo vero natus iure cupiditate eos consequuntur voluptate inventore molestias placeat doloribus debitis vitae
+        molestiae sapiente laborum illum, quam ullam minima numquam deleniti odio deserunt laboriosam enim. Labore,
+        officiis incidunt?</p>
+</body>
+
+</html>

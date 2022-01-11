@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos y alineaciones</title>
+    <style>
+        /*Como transformar textos*/
+        #mayusculas {
+            text-transform: uppercase;
+        }
+
+        #minusculas {
+            text-transform: lowercase;
+        }
+
+        #letra-capital {
+            text-transform: capitalize;
+        }
+
+        /*Como controlar el interlineado de un texto*/
+        #interlineado{
+            line-height: 1.9;
+        }
+        #interlineado-2{
+            line-height: 250%;
+        }
+
+        /*Como aplicar sobra a un texto*/
+        #texto-con-sombra{
+            text-shadow: 8px 4px 4px green;
+            font-size: 3rem;
+        }
+
+        /**/
+        #multiple{
+            font-size: 3rem;
+            text-shadow: 0 1px 0 yellow,
+                        1px 0 0 yellowgreen,
+                        1px 2px 1px green,
+                        2px 1px 1px greenyellow,
+                        2px 3px 2px gray,
+                        3px 2px 2px blue,
+                        4px 9px 3px black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Propiedades relacionadas con el texto</h1>
+
+    <h2>Propiedad text-transform</h2>
+    <p id="mayusculas">Este texto se muestra en mayusculas</p>
+    <p id="minusculas">Este texto se muestra en minusculas</p>
+    <p id="letra-capital">La primera letra de cada palabra de este texto se muestra en mayusculas</p>
+
+    <h2>Propiedad line-height</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est et possimus magni amet ipsam, dolorum ex quibusdam
+        esse ullam, exercitationem non numquam libero deserunt aut quaerat explicabo illum magnam tempora!</p>
+    <p id="interlineado">Labore soluta earum inventore voluptatibus modi et velit tempora voluptates? Asperiores, rem repellendus. Aliquid
+        facilis a corrupti eos sapiente itaque tempore, fugit, libero quam aut excepturi, voluptate consequatur est ad.
+    </p>
+    <p id="interlineado-2">Eius ipsum maxime aperiam, repellat quibusdam explicabo earum voluptatem nihil, nemo ipsam consequuntur possimus
+        laborum tempore doloribus ea officiis enim aliquam totam sunt dolore neque velit atque? Debitis, reprehenderit
+        numquam.</p>
+
+    <h2>Propiedad text-shadow</h2>
+    <p id="texto-con-sombra">Este es un texto con sombra</p>
+    <p id="multiple">Este texto tiene multiples sombras.</p>
+
+</body>
+
+</html>

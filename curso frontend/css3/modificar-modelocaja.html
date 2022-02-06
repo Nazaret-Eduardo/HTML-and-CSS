@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar el modelo de caja de css</title>
+    <style>
+
+        /*Conestas reglas se afectan a todos los elementos del archivo*/
+        html{
+            box-sizing: border-box;
+        }
+        *, *:before, *:after{
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+        }
+
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /*Crear contenido en columnas*/
+        .caja{
+            width: 424px;
+            float: left;
+            margin: 0px 10px;
+            border: 1px solid;
+            padding: 5px 12px;
+        }
+        img{
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Como modificar el modelo de cajas tradicional</h1>
+    
+
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <img src="img/descarga.jpg" alt="Esta es una imagen de prueba">
+        <h2>Como descargar una imagen</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi vero hic, fugiat quod culpa aspernatur ab
+            cupiditate eveniet, eligendi enim eum. Asperiores accusantium debitis explicabo obcaecati dignissimos
+            maiores veritatis officia.</p>
+        <a href="#">Leer mas......</a>
+    </div>
+    <div class="caja">
+        <img src="img/descarga.jpg" alt="Esta es una imagen de prueba">
+        <h2>Como descargar una imagen</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi vero hic, fugiat quod culpa aspernatur ab
+            cupiditate eveniet, eligendi enim eum. Asperiores accusantium debitis explicabo obcaecati dignissimos
+            maiores veritatis officia.</p>
+        <a href="#">Leer mas......</a>
+    </div>
+    <div class="caja">
+        <img src="img/descarga.jpg" alt="Esta es una imagen de prueba">
+        <h2>Como descargar una imagen</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi vero hic, fugiat quod culpa aspernatur ab
+            cupiditate eveniet, eligendi enim eum. Asperiores accusantium debitis explicabo obcaecati dignissimos
+            maiores veritatis officia.</p>
+        <a href="#">Leer mas......</a>
+    </div>
+</body>
+
+</html>

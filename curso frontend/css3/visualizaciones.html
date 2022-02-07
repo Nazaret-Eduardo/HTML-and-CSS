@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /*Ocultar elementos*/
+        #texto-invisible {
+            visibility: hidden;
+        }
+        #ocultar-texto{
+            color: #ff0000;
+            display: none;
+        }
+
+        /*Modificar el comportamiento de los elementos*/
+        a{
+            background-color: #008000;
+            color:#fff;
+            /*width: 230px;*/
+            /*height: 42px;*/
+            margin: 12px 0;
+            display:block;
+        }
+
+        .caja{
+            background-color: #0000ff;
+            color: #fff;
+            width: 87%;
+            height: 130px;
+            margin: 20px 0;
+            display: inline;
+        }
+
+        .enLineaBloque{
+            background-color: #008000;
+            border: 1px solid;
+            color: #fff;
+            width: 25%;
+            height: 145px;
+            padding: 5px 0;
+            margin: 4px 0;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Como controlar la visualización de elementos</h1>
+    <h2>Propiedad visibility</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque perspiciatis laboriosam consequuntur
+        cupiditate voluptatem provident iste facilis rem quod porro natus, ipsum laborum quas aliquam? Debitis dolorem
+        ut tenetur?</p>
+    <p id="texto-invisible">Nostrum adipisci officiis nobis esse mollitia, laborum dicta accusantium a blanditiis
+        molestiae possimus beatae
+        veritatis! Quibusdam eum excepturi tempora sed, neque tempore nam nulla! Minus rerum saepe ullam expedita
+        fugiat.</p>
+    <p>Est facilis tempore adipisci aliquid perspiciatis quidem accusantium doloremque, debitis nostrum tenetur aliquam
+        ad libero consequatur consectetur voluptatum suscipit dolor vitae corporis exercitationem veniam sint? Ex
+        cupiditate assumenda aliquam voluptatum?</p>
+
+    <h2>Propiedad Display: none</h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero nostrum debitis vero, laboriosam in
+        commodi autem animi veritatis, eum deserunt magnam cumque ea ullam nobis delectus odit numquam. Sint?</p>
+    <p id="ocultar-texto">Dolore eligendi totam harum culpa minima libero eveniet aliquam in cumque sed, velit minus ullam nihil sint
+        repellat iure iusto aliquid perferendis nesciunt amet ipsum vitae? Nobis eos aut a.</p>
+    <p>Nobis repellat, minima tenetur fuga sed accusamus aliquam. Explicabo a velit voluptatem odit dolorem rem esse,
+        incidunt expedita minus dicta adipisci quidem doloremque quisquam tempore ad voluptas eaque! Aspernatur, harum.
+    </p>
+
+    <h2>Propiedad display block</h2>
+
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+
+    <h2>Propiedad Display: inline</h2>
+    <div class="caja">ejemplo 1</div>
+    <div class="caja">ejemplo 2</div>
+    <div class="caja">ejemplo 3</div>
+
+    <h2>Propiedad display: inline-block</h2>
+    <span class="enLineaBloque">Caja 1</span>
+    <span class="enLineaBloque">Caja 2</span>
+    <span class="enLineaBloque">Caja 3</span>
+</body>
+</html>

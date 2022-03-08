@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Lineal y Radial</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /*Degradados Cirulares*/
+        #efecto-radial{
+            width: 100%;
+            height: 250px;
+            background-color: #ffff00;
+            background-image: radial-gradient(farthest-corner circle at center, #ffff00 50%, #000);
+        }
+        /*Gradientes Recursivos*/
+        #recursivo-lineal{
+            width: 100%;
+            height: 250px;
+            background-color: #1a82f7;
+            margin-bottom: 12px;
+            background-image: repeating-linear-gradient(90deg, #1a82f7, #000 80px);
+        }
+        #recursivo-radial{
+            width: 100%;
+            height: 250px;
+            background-color: #adff2f;
+            background-image: repeating-radial-gradient(closest-side at 150px 25px, #adff2f 15%, #ffff00 40%);
+        }       
+    </style>
+</head>
+
+<body>
+    <h2>Degradados Circulares</h2>
+    <div id="efecto-radial"></div>
+
+    <h2>Degradados Recursivos</h2>
+    <div id="recursivo-lineal"></div>
+    <div id="recursivo-radial"></div>
+</body>
+
+</html>

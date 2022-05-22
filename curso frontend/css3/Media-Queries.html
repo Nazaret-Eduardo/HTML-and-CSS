@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como aplicar media queries</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family-Orbitron:400,500|Roboto">
+    <!--
+    <link rel="stylesheet" media="print" href="css/imprimir.css">
+    -->
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        img {
+            width: 30%;
+            height: auto;
+            float: left;
+            margin: 0.3em 0.9em 0.3em 0;
+        }
+
+        /*Media Queries*/
+        @media print {
+            body {
+                color: blue
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            body {
+                background-color: #e0e0e0;
+            }
+            div{
+                margin: 0 0.90em;
+            }
+            img{
+                width: 45%;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.09rem;
+                text-align: justify;
+            }
+        }
+
+        @media screen and (max-width: 500px){
+            div {
+                margin: 0 0.95em;
+            }
+            img{
+                width: 100%;
+                margin: 0.95em;
+            }
+            h1{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.95rem;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Consejos para adiestrar a tu perro</h1>
+        <img src="img/descarga.jpg" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut officiis iste corporis. Natus numquam molestias
+            nesciunt qui voluptatem hic tenetur velit nihil fugiat, rerum error corrupti at odio esse soluta.</p>
+        <p>Quas aperiam beatae recusandae saepe repellat et inventore atque accusamus illum officia pariatur nostrum
+            tempore nisi distinctio dolore error quod quis molestiae esse labore, fugiat nobis. Veniam voluptates nulla
+            laboriosam!</p>
+        <p>Nisi quis, voluptate magnam ullam necessitatibus atque corporis sit repellat ducimus, incidunt porro totam
+            velit consectetur illo doloribus perferendis voluptatem dolorum ipsam pariatur odio! Optio dolor veniam
+            temporibus modi nisi?</p>
+        <p>Facilis numquam sed temporibus itaque aliquam commodi. Quo perferendis et asperiores voluptas quia vel, a in
+            aspernatur totam neque culpa doloremque, dicta aliquid earum, eius explicabo pariatur ratione? Magnam, vel.
+        </p>
+        <p>Obcaecati modi vitae perferendis repellat dicta, error voluptates nulla consequuntur mollitia eius
+            dignissimos ipsum exercitationem eaque magni ea saepe libero illum. Magni velit omnis, quasi id architecto
+            tenetur neque hic.</p>
+    </div>
+</body>
+
+</html>

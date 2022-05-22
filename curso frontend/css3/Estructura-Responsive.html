@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como crear una estructura responsive</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family-Orbitron:400,500|Roboto">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        html{
+            box-sizing: border-box;
+        }
+
+        /*Modificar el modelo de cajas de css*/
+
+        *, *:before, *:after{
+            box-sizing: border-box;
+        }
+
+        /*Resetear margenes y padding*/
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Lucida Sans", sans-serif;
+            font-size: 1.125rem;
+            text-align: justify;
+        }
+
+        /*Estilos de la cabezera*/
+        #header{
+            background-color: #4587f1;
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 12px;
+        }
+
+        /*Rejilla flexible*/
+
+        #container{
+            width: 100%;
+            max-width: 1366px;
+            padding: 12px 1.46%; /*Rellenos laterales: 20px/1366px*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Cabecera-->
+    <div id="header">
+        <p>Logo</p>
+    </div>
+    <!--Contenidos-->
+    <div id="container">
+        <!--Lateral y menu de navegacion-->
+        <div id="side">
+            <ul id="nemu">
+                <li>Inicio</li>
+                <li>Categorias</li>
+                <li>Acercca de</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
+
+        <!--Contenido Principal-->
+        <div id="mainContent">
+            <h1>10 lugares para hacer turismo interno</h1>
+            <img src="img/descarga.jpg" alt="Imagen de fondo">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam optio molestias, ratione voluptates
+                officiis dolores provident doloremque placeat fugiat mollitia. Molestias molestiae nihil ullam vitae
+                porro, cupiditate blanditiis perferendis ratione.</p>
+            <p>Suscipit officiis error qui odio, fugiat voluptate modi. Eligendi minima eaque tempore, magni, aliquam
+                neque dolorem reiciendis atque numquam, odit explicabo voluptatum odio voluptas consectetur quibusdam?
+                Vel, soluta animi. Architecto!</p>
+            <p>Modi molestias in eveniet perferendis aliquid cumque quod rerum. Ipsam expedita numquam voluptate
+                voluptates adipisci. Praesentium vel blanditiis eum cum earum provident neque soluta! Minus, nobis
+                totam. Laborum, rerum. Rem.</p>
+            <p>Possimus perferendis voluptas officia debitis neque sed saepe tempore. Temporibus voluptatem minus
+                molestiae unde fuga, quam tempore fugit repellendus facilis aliquam sapiente, corporis, sed illum
+                veritatis ratione recusandae reiciendis esse.</p>
+            <p>Voluptatum enim cum recusandae sapiente perferendis tempora sunt, praesentium quam qui modi. Voluptatem
+                officiis optio debitis reiciendis repellat id facilis. Modi a porro quam placeat ut, minus natus quasi
+                tempora.</p>
+            <p>Explicabo odit neque quidem nihil repellendus debitis ipsam sint, rem recusandae, magnam aperiam labore
+                quia, reprehenderit dignissimos doloremque. Asperiores minima id beatae eius libero assumenda inventore
+                modi veniam aliquid consectetur.</p>
+            <p>Rerum quaerat quae, error autem consectetur mollitia nihil officiis ab sapiente a commodi doloribus
+                ducimus dicta aliquid? Voluptatem blanditiis natus earum, iusto officiis minima, amet dicta asperiores
+                illo, veritatis repudiandae!</p>
+            <p>Magni, quod ad repellendus dignissimos laboriosam aliquam dolorem quos doloribus consequatur earum vel
+                aperiam. Dignissimos labore sequi earum velit expedita magnam facere ipsa, sint tenetur ab quaerat, rem
+                autem? Facere!</p>
+            <p>Delectus veniam libero modi sapiente neque, nesciunt necessitatibus ex at officia perferendis atque,
+                labore dicta id architecto placeat praesentium debitis! Voluptatum laudantium dolores necessitatibus,
+                rerum iure nam facere possimus magnam.</p>
+            <p>Consectetur ipsam rem in molestiae impedit alias, incidunt quia quasi et voluptas, inventore quo commodi!
+                Similique, enim possimus natus impedit adipisci doloremque minima corrupti quis provident aut officia
+                numquam amet!</p>
+        </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <div id="footer">
+        <small>Derechos reservados</small>
+    </div>
+</body>
+
+</html>

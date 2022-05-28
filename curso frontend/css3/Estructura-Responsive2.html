@@ -105,7 +105,29 @@
             margin-bottom: 12px;
         }
 
-        
+        #mainContent img{
+            max-width: 38%;
+            float: left;
+            margin-left: 0.48% /*5/1024.5px*/;
+            margin-right: 1.65%/*17/1024.5px = 1.65*/;
+            margin-bottom: 4px;
+        }
+
+        /*Estilos del pie de pagina*/
+        #footer{
+            background-color: #555;
+            color: #fff;
+            font-size: 0.90rem;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .clearfix{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
 
     </style>
 </head>
@@ -165,7 +187,7 @@
     </div>
 
     <!--Pie de pagina-->
-    <div id="footer">
+    <div id="footer" class="clearfix">
         <small>Derechos reservados</small>
     </div>
 </body>

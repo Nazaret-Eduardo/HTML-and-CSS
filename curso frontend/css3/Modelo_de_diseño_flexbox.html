@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja flexible (Flexbox)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family-Orbitron:400,500|Roboto">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        /*Estilos sobre div*/
+
+        .cajaFlexible {
+            background-color: #069e27;
+            display: flex;
+            /*flex-wrap: wrap-reverse;*/
+            /*flex-direction: row;*/
+            flex-flow: row wrap;
+        }
+
+        /*
+        @media screen and (max-width:500px){
+
+            .cajaFlexible {
+            background-color: #069e27;
+            display: flex;
+            /*flex-wrap: wrap-reverse;*/
+        /*flex-direction: column-reverse;
+        flex-direction: column;
+        }
+        }
+        */
+        
+
+        .cajaFlexible>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+
+    <h2>Propiedades del contenedor flexible</h2>
+
+    <div class="cajaFlexible">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+
+</html>

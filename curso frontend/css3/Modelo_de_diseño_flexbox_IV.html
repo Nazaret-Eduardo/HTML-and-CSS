@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja flexible (Flexbox)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family-Orbitron:400,500|Roboto">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /*Estilos sobre div*/
+
+        .cajaFlexible {
+            background-color: #069e27;
+            display: flex;
+        }
+
+        .cajaFlexible>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 3rem;
+        }
+
+        /*Flex grow*/
+
+        .grow > div:nth-child(2){
+            flex-grow: 1;
+        }
+
+        .grow > div:nth-child(3){
+            flex-grow: 2;
+        }
+
+        .grow > div:nth-child(5){
+            flex-grow: 3;
+        }
+
+        /*Flex shrink*/
+        .shrink {
+            width: 900px;
+        }
+
+        .shrink > div:nth-child(4){
+            flex-shrink: 10;
+        }
+
+        /*
+        Flex basis
+        .basis{
+            flex-direction: column;
+        }
+        */
+
+        .basis > div:nth-child(3){
+            flex-basis: 300px;
+        }
+
+        /*Flex*/
+        .flex>div:nth-child(2){
+            flex: 0 10 400px;
+        } 
+</style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <h2>Propiedad flex-grow</h2>
+
+    <div class="cajaFlexible grow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>Propiedad flex-shrink</h2>
+
+    <div class="cajaFlexible shrink">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h2>Propiedad flex-basis</h2>
+
+    <div class="cajaFlexible basis">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h2>Propiedad flex</h2>
+
+    <div class="cajaFlexible flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+
+</html>
